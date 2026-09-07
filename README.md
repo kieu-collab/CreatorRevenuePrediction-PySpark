@@ -152,7 +152,7 @@ The app loads the selected saved `PipelineModel`, creates a one-row Spark DataFr
 
 ## Google Colab
 
-Open `notebooks/Creator_Revenue_PySpark.ipynb`, run all cells, then download `CreatorRevenuePySpark_artifacts.zip`. Colab is a one-machine Spark runtime (`local[*]`), useful for reproducibility and functional testing. A real big-data benchmark requires a multi-node cluster and a materially larger dataset.
+Open the [public Colab notebook](https://colab.research.google.com/drive/1QdsddSXzCv12AbjlxKCXpJHG_wkYlmPv), run all cells, then download the generated Spark artifacts. Colab is a one-machine Spark runtime (`local[*]`), useful for reproducibility and functional testing. A real big-data benchmark requires a multi-node cluster and a materially larger dataset.
 
 ## Streamlit Community Cloud
 
@@ -167,6 +167,6 @@ The included canonical dataset has 4,798 rows, so it is not big data. This proje
 
 ## Public links
 
-- GitHub: `https://github.com/kieu-collab/CreatorRevenuePrediction-PySpark`
-- Colab: added after the public notebook is created.
-- Streamlit: added after the new app is deployed.
+- GitHub: <https://github.com/kieu-collab/CreatorRevenuePrediction-PySpark>
+- Colab: <https://colab.research.google.com/drive/1QdsddSXzCv12AbjlxKCXpJHG_wkYlmPv>
+- Streamlit: <https://creator-revenue-pyspark-kieu.streamlit.app/>
