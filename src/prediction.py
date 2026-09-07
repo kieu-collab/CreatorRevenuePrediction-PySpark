@@ -19,6 +19,14 @@ def load_pipeline_model(path: str | Path) -> PipelineModel:
 
 def predict_one(payload: dict[str, Any], spark: SparkSession, model: PipelineModel) -> dict[str, float]:
     row = {field.name: payload.get(field.name) for field in INPUT_SCHEMA.fields}
+    print("ROW:", row)
+
+for key, value in row.items():
+    print(
+        key,
+        value,
+        type(value)
+    )
     source = spark.createDataFrame([row], schema=INPUT_SCHEMA)
     prediction_log = float(model.transform(build_features(source)).select("prediction_log").first()[0])
     predicted_revenue = max(0.0, math.expm1(prediction_log))
